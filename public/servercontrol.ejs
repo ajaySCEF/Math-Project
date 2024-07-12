@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Portal</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    
+    <script src="jquery.js"></script>
+    <script src="bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Game Changer Server Portal</h1>
+        <br>
+        <div id="Timer">
+            <h5>Time Remaining : 4:00</h5>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row" id="timebtn">
+            <button type="button" class="btn btn-primary" id="timerstart">Start Timer</button>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div id="score" class="row"></div>
+        <div id="updatescore" class="row">
+
+        </div>
+        <div class="row" id="subtn">
+            <button type="button" class="btn btn-primary" id="usbtn" disabled>Update Score</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Upload game save file</label>
+            <input class="form-control" type="file" id="formFile">
+        </div>
+        <div class="row">
+            <button type="button" class="btn btn-primary" id="lgbtn">Load Game</button>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="code1.js"></script>
+    
+</body>
+
+</html>

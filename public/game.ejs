@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Portal</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.min.js"></script>
+    
+</head>
+
+<body>
+    <div class="container">
+        <h1>Game Changer</h1>
+    </div>
+    <br>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div  id="playnum">
+
+                </div>
+                <div  id="Score">
+                    <h5>Current Score : 100</h5>
+                </div>
+                <div  id="Timer">
+                    <h5>Time Remaining : 4:00</h5>
+                </div>
+                <br>
+                <h4>Bet on your Teammate</h4>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="ownteam" id="ownteamcorrect">
+                    <label class="form-check-label" for="ownteamcorrect">
+                        Correct
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="ownteam" id="ownteamcorrect2" checked>
+                    <label class="form-check-label" for="ownteamcorrect2">
+                        Not Correct
+                    </label>
+                </div>
+            </div>
+
+            <br>
+            <div class="col">
+            <div id="entbet" class="col">
+            </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="row">
+        <button type="button" class="btn btn-primary" id="betsub" disabled>Submit</button>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="code.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script> -->
+</body>
+
+</html>
+
+<!-- <div class="form-check"> <input class="form-check-input" type="radio" name="team'+i+'" id="team'+i+'correct"> <label class="form-check-label" for="team'+i+'correct"> Correct </label> </div> <div class="form-check"> <input class="form-check-input" type="radio" name="team'+i+'" id="team'+i+'correct2" checked> <label class="form-check-label" for="team'+i+'correct2"> Not Correct </label> </div> -->
